@@ -86,4 +86,3 @@ uvicorn main:app --reload
 
 * Add **authentication / authorization**
 * Add **search / filter** endpoints
-* Add **completed/done status** for tasks
