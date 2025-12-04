@@ -84,6 +84,5 @@ uvicorn main:app --reload
 ## **Future Improvements**
 
 * Add **authentication / authorization**
-* Add **sorting by priority/date**
 * Add **search / filter** endpoints
 * Add **completed/done status** for tasks

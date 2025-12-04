@@ -7,6 +7,7 @@ class Taskbase(SQLModel):
     name: str 
     priority: str = Field(index=True, default="Normal")
     date: str = Field(index=True)
+    status: str = Field(default="new")
     
 class Task(Taskbase, table=True):
     id: int | None = Field(default=None, primary_key=True)
@@ -15,9 +16,10 @@ class TaskPublic(Taskbase):
     id: int
 
 class TaskUpdate(Taskbase):
-    name: str 
-    priority: str = Field(index=True, default="Normal")
-    date: str = Field(index=True)
+    name: str | None = None
+    priority: str | None = None
+    date: str | None = None
+    status: str | None = None
     
 sqlite_file_name = "task.db"
 sqlite_url = f"sqlite:///{sqlite_file_name}"
