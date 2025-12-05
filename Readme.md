@@ -84,5 +84,7 @@ uvicorn main:app --reload
 
 ## **Future Improvements**
 
-* Add **authentication / authorization**
-* Add **search / filter** endpoints
+[x] Add **authentication / authorization**
+
+
+[ ] Add **search / filter** endpoints
