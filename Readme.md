@@ -112,3 +112,26 @@ This API is designed to work with a **curses-based CLI Task Manager** that suppo
 * Scrolling
 * Full CRUD task control
 
+## **How to Run the App**
+
+### **1. Start the Backend API**
+
+```bash
+uvicorn main:app --reload
+```
+
+* API will run at `http://127.0.0.1:8000`
+
+### **2. Run the CLI Frontend**
+
+```bash
+python cli.py
+```
+
+* On first run, choose **Register** to create a user
+* Then **Login** to access and manage your tasks
+
+### Results
+<img width="487" height="402" alt="image" src="https://github.com/user-attachments/assets/2f68ab8e-d2ea-42fc-b7d4-2b6b5c6a1205" />
+<img width="447" height="279" alt="image" src="https://github.com/user-attachments/assets/8892b177-d17a-4a23-a20a-68c807254333" />
+<img width="947" height="1018" alt="image" src="https://github.com/user-attachments/assets/75c1dab8-290f-4610-923c-cc4353ed19c0" />
